@@ -1,0 +1,15 @@
+
+.main{
+    flex: 1;
+    text-align: center;
+    
+  }
+
+  h1 {
+    font-size: 3rem;
+    clear: both;
+    font-style: normal;
+  }
+  span{
+    color: aquamarine;
+  }

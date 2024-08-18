@@ -1,0 +1,18 @@
+
+<div id="container">
+    <h1>VOLUNTARY WORK</h1><br>
+    <div class="item" [ngClass]="{'active': item.active}" *ngFor="let item of items; let vindex=index">
+      <div class="heading" (click)="vitemClicked(vindex)">
+        {{item.title}}
+        <span class="status-icon">
+          {{ item.active ? '▼' : '▶' }}
+        </span>
+      </div>
+      <div class="content">
+        {{item.adresse}}<br>{{item.year}}<br>work tasks:
+        <ul>
+          <li *ngFor="let task of item.work">{{task}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
