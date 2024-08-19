@@ -9,7 +9,53 @@
     font-size: 3rem;
     clear: both;
     font-style: normal;
+    color: white;
   }
   span{
     color: aquamarine;
+    
   }
+  p{
+    color: white;
+  }
+  .circular-image {
+    width: 400px; /* Ensure this is the same as height */
+    height: 400px; /* Ensure this is the same as width */
+    border-radius: 50%;
+    object-fit: cover; /* Optional: Ensures the image covers the circle area */
+}
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(16deg);
+  }
+  20% {
+    transform: rotate(-6deg);
+  }
+  30% {
+    transform: rotate(16deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(16deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+

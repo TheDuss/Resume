@@ -29,7 +29,7 @@ export class VoluntaryworkComponent {
       work: ['Association treasurer'],
     },
   ];
-  vitemClicked(i: number) {
+  itemClicked(i: number) {
     if (this.items[i].active) {
       this.items[i].active = false;
     } else {
