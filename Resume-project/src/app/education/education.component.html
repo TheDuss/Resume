@@ -1,15 +1,13 @@
-<h1>EDUCATION</h1>
-<br />
-
+  <h1>EDUCATION</h1> <br/>
 <mdb-accordion [multiple]="true">
   <mdb-accordion-item *ngFor="let item of items;">
     <ng-template mdbAccordionItemHeader>{{ item.title }}</ng-template>
     <ng-template mdbAccordionItemBody>
-      {{ item.degree }}<br />{{ item.year }}
+      {{ item.degree }}<br />{{ item.year }}<br />
       <ul>
         <li *ngFor="let task of item.learning">{{ task }}</li>
       </ul>
     </ng-template>
   </mdb-accordion-item>
  
-</mdb-accordion>
+</mdb-accordion><br>
