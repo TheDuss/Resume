@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 
 @Component({
   selector: 'app-voluntarywork',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,MdbAccordionModule],
   templateUrl: './voluntarywork.component.html',
   styleUrl: './voluntarywork.component.css'
 })

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,MdbAccordionModule],
   templateUrl: './education.component.html',
   styleUrl: './education.component.css'
 })

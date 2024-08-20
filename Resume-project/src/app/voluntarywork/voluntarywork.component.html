@@ -1,27 +1,14 @@
 
   <h1>VOLUNTARY WORK</h1><br>
-  <div id="container">
-    <div class="item" [ngClass]="{'active': item.active}" *ngFor="let item of items; let vindex=index">
-      <div class="heading" (click)="itemClicked(vindex)">
-        {{item.title}}
-        <span class="status-icon">
-          <ng-container *ngIf="item.active; else inactiveIcon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-            </svg>
-          </ng-container>
-          <ng-template #inactiveIcon>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
-            </svg>
-          </ng-template>
-        </span>
-      </div>
-      <div class="content">
-        {{item.adresse}}<br>{{item.year}}<br>work tasks:
-        <ul>
-          <li *ngFor="let task of item.work">{{task}}</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <mdb-accordion [multiple]="true">
+  <mdb-accordion-item *ngFor="let item of items;">
+    <ng-template mdbAccordionItemHeader>{{ item.title }}</ng-template>
+    <ng-template mdbAccordionItemBody>
+      {{item.adresse}}<br>{{item.year}}<br>work tasks:
+      <ul>
+        <li *ngFor="let task of item.work">{{task}}</li>
+      </ul>
+    </ng-template>
+  </mdb-accordion-item>
+ 
+</mdb-accordion><br>
