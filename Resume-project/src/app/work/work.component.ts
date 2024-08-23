@@ -18,7 +18,7 @@ export class WorkComponent {
     active?: boolean;
   }[] = [
     {
-      title: 'Software Intern • Develvo Product',
+      title: 'Software Intern • Develco Products',
       adresse: 'Tangen 6, 8200 Aarhus N',
       year: 'Feb 2022 - Jun 2022',
       work: [

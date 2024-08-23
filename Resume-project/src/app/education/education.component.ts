@@ -19,12 +19,12 @@ export class EducationComponent {
     active?: boolean;
   }[] = [
     {
-      title: 'Software technology • AU AArhusUniversity',
+      title: 'Software technology • AU Aarhus University',
       degree: 'Professional bachelor',
       year: 'Dec 2018 - Jan 2024',
       learning: [
-        'Through my education, I have gained a broad and solid basicknowledge in mathematics, physics, signal processing and bothanalogue and digital electronics. I have developed in-depth skills inprogramming, system development, software design and testing, aswell as development processes and modern software technologies.My education has also given me insight into innovation andenvironmental aspects of software development.',
-        'I have learned to apply my knowledge to develop new and innovativesoftware solutions, select and implement optimal technologicalsolutions for specific problems, and put these solutions into operation.I can effectively communicate complex technical issues and solutionsto both technical and non-technical stakeholders. ',
+        'Through my education, I have gained a broad and solid basic knowledge in mathematics, physics, signal processing and bothanalogue and digital electronics. I have developed in-depth skills inprogramming, system development, software design and testing, aswell as development processes and modern software technologies. My education has also given me insight into innovation andenvironmental aspects of software development.',
+        'I have learned to apply my knowledge to develop new and innovativesoftware solutions, select and implement optimal technologicalsolutions for specific problems, and put these solutions into operation. I can effectively communicate complex technical issues and solutionsto both technical and non-technical stakeholders. ',
         'I have strong skills in process and project management, and I am ableto work both innovatively and developmentally in software-relatedprojects.'],
     },
  
