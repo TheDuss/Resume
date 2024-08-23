@@ -1,11 +1,27 @@
 .main {
-  flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
+
 .img {
-  width: 340px;
-  height: 400px;
-  border-radius: 50%;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+
+  opacity: 0;
+  animation: floatInFromRight 1s ease-out forwards, fadeIn 1s ease-in;
+
+  @media (max-width: 480px) {
+    width: 19rem;
+    height: 24rem;
+  }
 }
 
 h1 {
@@ -13,10 +29,67 @@ h1 {
   clear: both;
   font-style: normal;
   color: white;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatInFromBot 1s ease-out forwards, fadeIn 1s ease-in;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
-span {
+
+.creative {
   color: aquamarine;
+  font-size: 2rem;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatInFromLeft 1s ease-out forwards, fadeIn 1s ease-in;
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 }
+
+.creative-text-right {
+  color: aquamarine;
+  font-size: 1.5rem;
+  text-align: right;
+  padding-top: 2rem;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: floatInFromRight 2s ease-out forwards, fadeIn 2s ease-in;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+.creative-text-left {
+  color: aquamarine;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+
+  opacity: 0;
+  animation: floatInFromLeft 2s ease-out forwards, fadeIn 2s ease-in;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+.attributes-container{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
 p {
   color: white;
 }
@@ -55,24 +128,5 @@ p {
     transform: rotate(0deg);
   }
 }
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
 
-  .img {
-    max-width: 160px;
-    height: 200px;
-  }
-}
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  .img {
-    max-width: 160px;
-  }
-}
