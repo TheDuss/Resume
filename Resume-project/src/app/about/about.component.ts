@@ -5,10 +5,11 @@ import { VoluntaryworkComponent } from '../voluntarywork/voluntarywork.component
 import { EducationComponent } from '../education/education.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [WorkComponent,VoluntaryworkComponent,EducationComponent,HttpClientModule],
+  imports: [WorkComponent,VoluntaryworkComponent,EducationComponent,HttpClientModule ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
